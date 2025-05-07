@@ -72,4 +72,8 @@ footer {
   .navbar-nav {
     text-align: center;
   }
+  .logo {
+    height: 40px;
+    width: auto;
+  }
 }
