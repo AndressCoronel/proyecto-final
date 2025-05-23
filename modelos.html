@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modelos - Volkswagen</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <img src="img/Volkswagen.jpg" alt="Volkswagen Logo" height="50">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="modelos.html">Modelos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 
-<header class="bg-dark text-white text-center py-4">
-  <h1>Modelos Volkswagen</h1>
-</header>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" href="#">VW</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="modelos.html">Modelos</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-      </ul>
+  <section class="modelos">
+    <h2>Nuevos modelos</h2>
+    <p class="subtitulo">Con motores que desafían cualquier terreno y diseños que imponen presencia.</p>
+  
+    <div class="grid-3">
+      <div class="modelo">
+        <img src="img/amarok.jpg" alt="Amarok V6">
+        <h3>Amarok V6</h3>
+        <a href="#" class="btn dark">Reservar</a>
+      </div>
+      <div class="modelo">
+        <img src="img/tcross.jpg" alt="T-Cross">
+        <h3>T-Cross</h3>
+        <a href="#" class="btn dark">Reservar</a>
+      </div>
+      <div class="modelo">
+        <img src="img/up.jpg" alt="Up">
+        <h3>Up</h3>
+        <a href="#" class="btn dark">Reservar</a>
+      </div>
     </div>
-  </div>
-</nav>
-
-<main class="container py-5">
-  <h2 class="text-center mb-4">Nuestros Modelos Destacados</h2>
-
-  <div class="row text-center">
-    <div class="col-md-6 col-lg-3 mb-4">
-      <img src="img/virtus.jpg" class="img-fluid mb-2" alt="Virtus">
-      <h5>Virtus</h5>
-      <p>Sedán elegante, espacioso y eficiente. Ideal para familias modernas.</p>
-    </div>
-    <div class="col-md-6 col-lg-3 mb-4">
-      <img src="img/golf.jpg" class="img-fluid mb-2" alt="Golf">
-      <h5>Golf</h5>
-      <p>Diseño icónico y rendimiento deportivo con tecnología de última generación.</p>
-    </div>
-    <div class="col-md-6 col-lg-3 mb-4">
-      <img src="img/polo.jpg" class="img-fluid mb-2" alt="Polo">
-      <h5>Polo</h5>
-      <p>Compacto, urbano y lleno de estilo. Ideal para la ciudad.</p>
-    </div>
-    <div class="col-md-6 col-lg-3 mb-4">
-      <img src="img/tcross.jpg" class="img-fluid mb-2" alt="T-Cross">
-      <h5>T-Cross</h5>
-      <p>Un SUV versátil y potente para quienes buscan aventuras.</p>
-    </div>
-  </div>
-</main>
-
-<footer class="bg-dark text-white text-center py-3">
-  <p>2025 Volkswagen Argentina - Todos los derechos reservados</p>
-</footer>
-
-</body>
-</html>
+  </section>
+  

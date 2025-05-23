@@ -1,20 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f8f9fa;
-  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  color: #111;
+  background-color: #f4f4f4;
+  line-height: 1.6;
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
-main h2 {
-  color: #0055a5;
-}
-
-footer {
-  font-size: 0.9rem;
-}
-
-img {
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #007b55;
+  color: white;
+  border: none;
   border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
+.btn:hover {
+  background-color: #004832;
+}
+
+.navbar {
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.navbar ul li a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: #007b55;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url("../img/Virtus.jpg") no-repeat center/cover;
+  min-height: 100vh;
+  color: rgb(255, 255, 255);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+.hero .btn {
+  margin-top: 2rem;
+}
+
+.modelos {
+  padding: 4rem 2rem;
+  max: width 100%;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.modelos h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.modelos .subtitulo {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.modelos .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.modelos .modelo {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.modelos .modelo:hover {
+  transform: translateY(-5px);
+}
+.modelos .modelo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+}
+.modelos .modelo h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+.modelos .modelo .btn.dark {
+  background-color: #111;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.modelos .modelo .btn.dark:hover {
+  background-color: #007b55;
+}
+
+.contacto {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.contacto p {
+  margin-bottom: 2rem;
+  color: #111;
+}
+.contacto .contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contacto .contacto-grid .medio {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+.contacto .contacto-grid .medio img {
+  width: 260px;
+  height: 260px;
+  margin-bottom: 1rem;
+}
+.contacto .contacto-grid .medio h3 {
+  font-size: 1.25rem;
+  color: #007b55;
+  margin-bottom: 0.5rem;
+}
+.contacto .contacto-grid .medio p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}/*# sourceMappingURL=style.css.map */
