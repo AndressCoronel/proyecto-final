@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volkswagen Argentina</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <img src="img/Volkswagen.jpg" alt="Volkswagen Logo" height="50">
+
+  <header class="navbar">
+    <a href="index.html">
+      <img src="../img/Volkswagen.jpg" alt="Volkswagen Logo" width="50" height="50" />
+    </a>
     <ul>
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="modelos.html">Modelos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="pages/modelos.html">Modelos</a></li>
+      <li><a href="pages/contacto.html">Contacto</a></li>
     </ul>
-  </nav>
-
-  <header class="hero">
-    <h1>Nuevo Virtus</h1>
-    <p>Elegancia, potencia y tecnología: el Volkswagen Virtus es tu próxima gran decisión.</p>
-    <a href="#" class="btn">Reservar</a>
   </header>
+
+  <!-- ¿Por qué elegir VW? -->
+  <section class="elegir-vw">
+    <h2>¿Por qué elegir <span>Volkswagen</span>?</h2>
+    <p>Innovación, seguridad y tecnología al servicio de tu próximo auto.</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <img src="img/seguridad.png" alt="Seguridad" />
+        <h3>Seguridad</h3>
+        <p>Vehículos pensados para cuidar lo que más querés con tecnología de protección.</p>
+      </div>
+      <div class="card">
+        <img src="img/tecnologia.png" alt="Tecnología" />
+        <h3>Tecnología</h3>
+        <p>Conectividad, asistencia inteligente y soluciones digitales para tu comodidad.</p>
+      </div>
+      <div class="card">
+        <img src="img/soporte.png" alt="Soporte" />
+        <h3>Soporte</h3>
+        <p>Red de servicios oficiales en todo el país, siempre cerca para ayudarte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nuevo Virtus -->
+  <section class="virtus-hero">
+    <div class="virtus-overlay">
+      <div class="virtus-content">
+        <h2>Nuevo <span>Virtus</span></h2>
+        <p>Elegancia, potencia y tecnología: el Volkswagen Virtus es tu próxima gran decisión.</p>
+        <a href="#" class="btn">Reservar</a>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>

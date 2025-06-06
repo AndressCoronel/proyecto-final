@@ -1,0 +1,105 @@
+.elegir-vw {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #f4f4f4;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #001e50;
+
+    span {
+      color: #0095d9; // celeste VW
+    }
+  }
+
+  p {
+    color: #444;
+    margin-bottom: 2.5rem;
+  }
+
+  .grid-3 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 50px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        color: #001e50;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #333;
+      }
+    }
+  }
+}
+
+.virtus-hero {
+  background: url('../img/virtus-new.jpg') no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+
+  .virtus-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .virtus-content {
+      text-align: center;
+      color: white;
+      padding: 2rem;
+
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+
+        span {
+          color: #0095d9;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 2rem auto;
+      }
+
+      .btn {
+        background-color: #0055a5;
+        color: white;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.3s;
+
+        &:hover {
+          background-color: #003b73;
+        }
+      }
+    }
+  }
+}

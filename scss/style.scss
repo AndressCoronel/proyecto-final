@@ -1,15 +1,20 @@
+// 1. Utilidades
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/media';
 
+// 2. Base
 @import './base/reset';
 @import './base/typography';
 
+// 3. Componentes
 @import './components/buttons';
 @import './components/navbar';
 
+// 4. Layout
 @import './layout/grid';
 
-@import './pages/home';
-@import './pages/modelos';
-@import './pages/contacto';
+// 5. Páginas
+@import './pages-scss/home';
+@import './pages-scss/modelos';
+@import './pages-scss/contacto';
