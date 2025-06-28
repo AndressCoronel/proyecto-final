@@ -111,7 +111,7 @@ body {
 }
 
 .virtus-hero {
-  background: url("../img/virtus-new.jpg") no-repeat center/cover;
+  background: url("./img/virtus-new.jpg") no-repeat center/cover;
   height: 100vh;
   position: relative;
 }
